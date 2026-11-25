@@ -224,7 +224,7 @@ main { width: 100%; padding-top: var(--header-h); padding-bottom: 9rem; backgrou
   .doctor { display: grid; grid-template-columns: 1fr; gap: var(--space-xl); padding: 0; background: none; box-shadow: none; text-align: left; align-items: center; }
   .doctor__media { width: 100%; max-width: 480px; height: auto; margin: 0 auto; }
   .doctor__verified { display: none; }
-  .doctor__halo { inset: -16px; border-radius: 40px; background: rgba(91, 217, 212, 0.14); transform: rotate(-2deg); filter: blur(4px); }
+  .doctor__halo { inset: -16px; border-radius: 40px; background: rgba(91, 217, 212, 0.12); transform: rotate(-2deg); filter: blur(8px); }
   .doctor__photo { border-radius: 32px; height: auto; box-shadow: var(--shadow-panel); }
   .doctor__photo img { aspect-ratio: 1; }
   .doctor__body { align-items: flex-start; gap: var(--space-md); }

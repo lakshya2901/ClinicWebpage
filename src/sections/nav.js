@@ -21,7 +21,7 @@ export function initNav() {
     if (e.key === 'Escape' && !drawer.hidden) { setOpen(false); btn.focus(); }
   });
   document.addEventListener('click', (e) => {
-    if (!drawer.hidden && !header.contains(e.target)) setOpen(false);
+    if (!drawer.hidden && !e.composedPath().includes(header)) setOpen(false);
   });
   window.matchMedia('(min-width: 1280px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
 

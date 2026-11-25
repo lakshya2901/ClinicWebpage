@@ -421,7 +421,6 @@ export function renderContact(c) {
 
 export function renderFooter(c) {
   const f = c.footer;
-  const dir = c.services.items.map((s) => `<li><a href="#services">${esc(s.title)}</a></li>`).join('');
   const hours = f.hours
     .map((h) => `<li><span>${esc(h[0])}</span><span class="footer__hours-val">${esc(h[1])}</span></li>`)
     .join('');
@@ -429,16 +428,6 @@ export function renderFooter(c) {
     .map((l) => `<a href="${l.href === 'tel' ? tel(c) : l.href}">${esc(l.label)}</a>`)
     .join('<span aria-hidden="true">•</span>');
   return `
-<section class="strip" aria-label="Services directory and clinical information">
-  <div class="container">
-    <div class="strip__grid">
-      <div class="strip__col"><img class="strip__logo" src="/images/logo.svg" alt="" width="40" height="40" /><p>${esc(f.about)}</p></div>
-      <div class="strip__col"><p class="strip__title">${esc(f.directoryTitle)}</p><ul>${dir.split('</li>').slice(0, 5).join('</li>')}</ul></div>
-      <div class="strip__col"><p class="strip__title">${esc(f.emergencyTitle)}</p><p>${esc(f.emergencyText)}</p><a class="text-link strip__phone" href="${tel(c)}">${icon('siren', { size: 18 })}<span>${esc(c.clinic.phone)}</span></a></div>
-      <div class="strip__col"><p class="strip__title">${esc(f.disclaimerTitle)}</p><p class="strip__small">${esc(f.disclaimer)} ${esc(c.doctor.name)}, Lic. ${esc(c.clinic.license)}.</p></div>
-    </div>
-  </div>
-</section>
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
@@ -459,6 +448,7 @@ export function renderFooter(c) {
         <div class="footer__oncall"><p class="footer__oncall-title">${esc(f.oncallTitle)}</p><p>${esc(f.oncallText)}</p></div>
       </div>
     </div>
+    <p class="footer__disclaimer"><strong>${esc(f.disclaimerTitle)}.</strong> ${esc(f.disclaimer)} ${esc(c.doctor.name)}, Lic. ${esc(c.clinic.license)}.</p>
     <div class="footer__bottom">
       <p>© ${new Date().getFullYear()} ${esc(c.clinic.name)} ${esc(c.clinic.city)}. All rights reserved. CA Lic. ${esc(c.clinic.license)}.</p>
       <nav class="footer__legal" aria-label="Legal">${f.legal.map((l) => `<a href="${l.href}">${esc(l.label)}</a>`).join('')}</nav>

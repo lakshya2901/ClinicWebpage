@@ -143,27 +143,13 @@ export async function createScene({ canvas, slot, hero, settings, reduced }) {
     const slotCy = r.top + r.height / 2;
     const heroPx = r.width * (isMobile() ? 0.46 : 0.56); // desktop: 256px of the 460px stage, as in the design
 
-    // Companion position (right margin, wide screens only)
-    const wide = vw >= 1360 && !reduced;
-    const compPx = 96;
-    const compCx = vw - 72;
-    const compCy = vh * 0.58 + Math.sin(time * 0.8) * 10;
-
-    const t = reduced ? 0 : ease(clamp01(smooth.leave / 0.85));
-    let cx = slotCx, cy = slotCy, px = heroPx;
-    if (wide) {
-      cx = lerp(slotCx, compCx, t);
-      cy = lerp(slotCy, compCy, t);
-      px = lerp(heroPx, compPx, t);
-    } else if (!reduced) {
-      px = heroPx * (1 - t); // fade out by shrinking
-    } else {
-      px = heroPx; // reduced motion: follow slot only
-    }
+    // The tooth lives in the hero: it sits in the hero slot, scrolls away with it and is gone
+    // once the hero is out of view (it never travels over the content sections).
+    const cx = slotCx, cy = slotCy, px = heroPx;
 
     pivot.position.set((cx - vw / 2) * pxToWorld, -(cy - vh / 2) * pxToWorld, 0);
     pivot.scale.setScalar(Math.max(px * pxToWorld, 0.0001));
-    pivot.visible = px > 2 && r.width > 0;
+    pivot.visible = r.width > 0 && r.bottom > 0 && r.top < vh;
 
     // Rotation: slow idle spin + scroll spin + pointer parallax tilt
     if (!reduced) autoSpin += dt * 0.35;

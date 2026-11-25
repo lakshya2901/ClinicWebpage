@@ -85,8 +85,8 @@ export const config = {
     ],
     trustMobile: '[X.X] ([N] Reviews) • [N] Patients • [N] Yrs',
     floatingBadges: [
-      { icon: 'zap', title: '[Technology name]', sub: '[Short descriptor]', pos: 'top' },
-      { icon: 'gem', title: '[Technology name]', sub: '[Short descriptor]', pos: 'bottom' },
+      { icon: 'zap', title: 'Gentle Care', sub: 'Comfort-first approach', pos: 'top' },
+      { icon: 'gem', title: 'Digital Scans', sub: 'Comfortable 3D imaging', pos: 'bottom' },
     ],
   },
 

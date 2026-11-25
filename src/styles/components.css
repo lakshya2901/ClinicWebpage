@@ -309,3 +309,6 @@
 /* ---------- Mobile tab bar ---------- */
 .tab { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 56px; height: 44px; color: var(--on-surface-variant); transition: color var(--dur); font-family: var(--font-display); font-weight: 700; font-size: 10px; line-height: 1.25; }
 .tab:hover, .tab.is-active { color: var(--primary); }
+
+.footer__disclaimer { display: none; }
+@media (min-width: 768px) { .footer__disclaimer { display: block; margin-bottom: var(--space-lg); max-width: 60rem; font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); color: var(--outline); } .footer__disclaimer strong { color: var(--on-surface-variant); } }
