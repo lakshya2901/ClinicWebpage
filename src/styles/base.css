@@ -1,0 +1,112 @@
+@import '@fontsource-variable/plus-jakarta-sans/wght.css';
+@import '@fontsource-variable/inter/wght.css';
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0 solid transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 8px);
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: var(--fs-body-md);
+  line-height: var(--lh-body-md);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, p, figure, blockquote, ul, ol { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; cursor: pointer; padding: 0; }
+input, select, textarea { font: inherit; color: inherit; }
+em { font-style: italic; }
+[hidden] { display: none !important; }
+
+.icon { flex-shrink: 0; }
+.icon--primary { color: var(--primary); }
+.icon--primary-container { color: var(--primary-container); }
+.icon--amber, .icon--star { color: var(--amber); }
+.icon--error { color: var(--error); }
+
+/* Visible focus for every interactive element */
+:focus-visible {
+  outline: 3px solid var(--primary-container);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.skip-link {
+  position: fixed; left: 12px; top: -60px; z-index: 100;
+  background: var(--primary); color: var(--on-primary);
+  padding: 10px 16px; border-radius: var(--r-full);
+  font-family: var(--font-display); font-weight: 600; font-size: 14px;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 12px; }
+
+/* Type scale helpers */
+.h-lg {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: var(--fs-headline-sm); line-height: var(--lh-headline-sm); letter-spacing: var(--ls-headline-sm);
+  color: var(--on-surface);
+}
+.h-sm {
+  font-family: var(--font-display); font-weight: 600;
+  font-size: var(--fs-headline-sm); line-height: var(--lh-headline-sm); letter-spacing: var(--ls-headline-sm);
+  color: var(--on-surface);
+}
+.eyebrow {
+  display: block;
+  font-family: var(--font-display); font-weight: 700;
+  font-size: var(--fs-label-sm); line-height: var(--lh-label-sm);
+  text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary);
+}
+@media (min-width: 768px) {
+  .h-lg { font-size: var(--fs-headline-lg); line-height: var(--lh-headline-lg); letter-spacing: var(--ls-headline-lg); }
+}
+
+/* Responsive swaps (desktop vs mobile content). !important so component display rules never win. */
+@media (max-width: 767.98px) {
+  .md-up, .md-up-block, .desktop-only { display: none !important; }
+}
+@media (min-width: 768px) {
+  .md-down, .md-down-block, .md-down-flex, .mobile-only { display: none !important; }
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--margin);
+}
+.container--narrow { max-width: var(--container-narrow); }
+@media (min-width: 768px) { .container { padding-inline: var(--margin-tablet); } }
+@media (min-width: 1200px) { .container { padding-inline: var(--margin-desktop); } }
+
+/* Reveal states are only applied when JS has initialised (never hide content without JS) */
+.js [data-reveal], .js [data-stagger-item] { will-change: transform, opacity; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

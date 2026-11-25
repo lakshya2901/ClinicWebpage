@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#4e607e", "outline": "#6c7a78", "tertiary-container": "#00b6af", "on-tertiary": "#ffffff", "surface-container": "#e9efee", "on-primary-fixed": "#00201f", "error": "#ba1a1a", "on-tertiary-container": "#00413e", "primary-fixed": "#7bf6f0", "background": "#f5fbfa", "on-secondary-fixed": "#071c36", "on-primary-fixed-variant": "#00504d", "surface-container-low": "#eff5f4", "surface": "#f5fbfa", "surface-variant": "#dee4e3", "inverse-on-surface": "#ecf2f1", "on-primary": "#ffffff", "surface-container-highest": "#dee4e3", "on-primary-container": "#00413f", "secondary-fixed": "#d6e3ff", "secondary": "#4d5f7d", "tertiary": "#006a66", "primary-container": "#2bb5b0", "primary-fixed-dim": "#5bd9d4", "surface-dim": "#d5dbda", "secondary-container": "#c8dbfe", "primary": "#006a67", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#26ddd4", "inverse-primary": "#5bd9d4", "surface-bright": "#f5fbfa", "on-error": "#ffffff", "on-background": "#171d1c", "inverse-surface": "#2b3231", "surface-container-high": "#e3e9e8", "on-tertiary-fixed-variant": "#00504c", "outline-variant": "#bcc9c8", "on-error-container": "#93000a", "tertiary-fixed": "#55f9f1", "surface-tint": "#006a67", "secondary-fixed-dim": "#b5c7ea", "on-secondary-fixed-variant": "#364764", "surface-container-lowest": "#ffffff", "on-surface": "#171d1c", "on-tertiary-fixed": "#00201e", "on-surface-variant": "#3c4948", "error-container": "#ffdad6" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "space-2xl": "4rem", "space-3xl": "6rem", "margin-tablet": "2.5rem", "space-xl": "2.5rem", "gutter": "1.5rem", "gutter-desktop": "2rem", "space-xs": "0.25rem", "margin-desktop": "4rem", "space-sm": "0.5rem", "margin": "1.25rem" }, "fontFamily": { "body-lg": ["Inter"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "label-lg": ["15px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-md": ["13px", { "lineHeight": "18px", "letterSpacing": "0.03em", "fontWeight": "600" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "display-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Aura Dental Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBBHpTZCj5KZJ1x3F-HFeHNis1ORiVt8LRk2LgcqNkyPaEcB8y2vDdpOuwyJfKxymMC1vCJLbKZAiiaSxZa0VW513tTaSlH1zSINq79fyW9WZgMMMJqdbBvpTqm69PSFswGwDl8Hu34efqq94Ejfyq5iAQF8hUdxHByMs9bkXpP30O7i-48mdNyzNYtAe8DrsB9hbO59qASeXp02g_h0VVqNYP2PTjNTav1mNLVUsRE"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold leading-none">Aura</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline leading-tight">Dental Studio • SF</span></div></div><nav class="hidden xl:flex items-center gap-space-sm" data-active-classes="bg-surface-container-high text-primary font-semibold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="services" href="#services">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="why-us" href="#why-us">Why Us</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="meet-dr-vance" href="#meet-dr-vance">Meet Dr. Vance</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="process" href="#process">Process</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="tech-results" href="#tech-results">Tech &amp; Results</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="reviews" href="#reviews">Reviews</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="faq" href="#faq">FAQ</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface px-3 py-1.5 rounded-full transition-colors" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden lg:flex items-center gap-1.5 text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="tel:4155550192"><span class="material-symbols-outlined text-[18px]">call</span><span>(415) 555-0192</span></a><a class="inline-flex items-center justify-center font-label-md text-label-md font-semibold text-on-primary-container bg-primary-container hover:bg-tertiary-container shadow-[0_12px_32px_-8px_rgba(11,31,58,0.06),0_4px_12px_-2px_rgba(43,181,176,0.08)] px-6 py-2.5 rounded-full transition-all duration-300" data-path="book-appointment" href="#book">Book Appointment</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ml-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj46wfZZ9WqI8VGo2tKWrsMnTqWrZTUTbGPSIT97KpY5FDmKQkMds9dPA9uwiBDFkL8BykDQA3MINVFU4lFSjmsFGlSsMWVJfVH0CpAPxtMBuz3KJMfXgmwO__YrUwIlt-RuekMdw7H30wRmAuYYwmzUheaOFAza43r02tg026pXkZ-GX9iW44MuoN9fWhtTwWJWh7FxJfToxhYeh5_osez_BIDJC3vPcqpUXruag"/></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden pb-space-3xl">
+<div class="absolute -top-32 right-0 w-[640px] h-[640px] bg-gradient-to-br from-primary-fixed/30 via-secondary-container/20 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-1/2 left-0 w-[420px] h-[420px] bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-[1280px] mx-auto px-margin-desktop pt-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Hero Left Column -->
+<div class="lg:col-span-7 space-y-space-lg">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface-container-low shadow-sm">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-semibold">SAN FRANCISCO • PACIFIC HEIGHTS</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight leading-[1.08]">
+            Healthy smiles engineered with <span class="text-primary italic">precision</span> &amp; artistry
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Experience elevated oral wellness combining gentle robotic precision, biological dentistry, and calm spa-like hospitality.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-label-lg text-label-lg font-bold text-on-primary-container bg-primary-container hover:bg-tertiary-container shadow-[0_12px_32px_-8px_rgba(11,31,58,0.12),0_4px_16px_rgba(43,181,176,0.25)] transition-all duration-300" href="#book">
+<span>Book Appointment</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-label-lg text-label-lg font-semibold text-secondary hover:text-primary bg-surface-container-lowest shadow-sm hover:bg-surface-container-low transition-all duration-300" href="tel:4158902872">
+<span class="material-symbols-outlined text-[20px]">phone_in_talk</span>
+<span>Call (415) 890-AURA</span>
+</a>
+</div>
+<!-- Trust Row -->
+<div class="pt-space-lg flex flex-wrap items-center gap-6 text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="text-amber-500 font-bold">★ 4.9</span>
+<span class="text-on-surface font-medium">(1,240+ Google Reviews)</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="text-on-surface font-medium">10,000+ Transformed Smiles</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-[18px]">history_edu</span>
+<span class="text-on-surface font-medium">15+ Years Clinical Excellence</span>
+</div>
+</div>
+</div>
+<!-- Hero Right Column: 3D Iridescent Tooth Graphic -->
+<div class="lg:col-span-5 relative flex items-center justify-center">
+<div class="relative w-full aspect-square max-w-[460px] flex items-center justify-center">
+<!-- Concentric Orbit Rings -->
+<div class="absolute inset-0 rounded-full border border-dashed border-primary-container/30 animate-[spin_40s_linear_infinite]"></div>
+<div class="absolute inset-6 rounded-full border border-secondary-container/50"></div>
+<div class="absolute inset-16 rounded-full bg-gradient-to-tr from-surface-container-low via-secondary-container/20 to-primary-fixed/20 shadow-inner"></div>
+<!-- Stylized Holographic 3D Tooth SVG -->
+<div class="relative z-10 w-64 h-64 flex items-center justify-center drop-shadow-[0_24px_48px_rgba(43,181,176,0.22)]">
+<svg class="w-full h-full transform hover:scale-105 transition-transform duration-500" fill="none" viewbox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="toothGradient" x1="20" x2="180" y1="20" y2="220">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"></stop>
+<stop offset="35%" stop-color="#7bf6f0" stop-opacity="0.85"></stop>
+<stop offset="70%" stop-color="#2bb5b0" stop-opacity="0.9"></stop>
+<stop offset="100%" stop-color="#006a67" stop-opacity="0.95"></stop>
+</lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="facetHighlight" x1="60" x2="140" y1="30" y2="120">
+<stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"></stop>
+<stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M100 24C65 24 35 48 35 88C35 124 50 148 65 178C75 198 75 224 88 224C95 224 96 200 100 190C104 200 105 224 112 224C125 224 125 198 135 178C150 148 165 124 165 88C165 48 135 24 100 24Z" fill="url(#toothGradient)"></path>
+<path d="M70 42C80 34 120 34 130 42C148 56 152 86 142 120C132 154 116 172 100 178C84 172 68 154 58 120C48 86 52 56 70 42Z" fill="url(#facetHighlight)"></path>
+<circle class="animate-pulse" cx="132" cy="74" fill="#ffffff" r="5"></circle>
+<circle cx="68" cy="112" fill="#7bf6f0" r="3.5"></circle>
+</svg>
+</div>
+<!-- Floating Badges -->
+<div class="absolute -top-4 right-2 z-20 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-surface-container-lowest shadow-[0_12px_32px_-8px_rgba(11,31,58,0.12)]">
+<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface">Pain-Free Laser</p>
+<p class="font-body-sm text-body-sm text-outline">Biolase® Waterlase</p>
+</div>
+</div>
+<div class="absolute -bottom-4 -left-4 z-20 flex items-center gap-2.5 px-4 py-2.5 rounded-2xl bg-surface-container-lowest shadow-[0_12px_32px_-8px_rgba(11,31,58,0.12)]">
+<span class="material-symbols-outlined text-primary text-[20px]">diamond</span>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface">Same-Day Ceramic</p>
+<p class="font-body-sm text-body-sm text-outline">Italian Milling Lab</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 1. SERVICES (3x2 Grid) -->
+<section class="w-full py-space-3xl bg-surface-container-low" id="services">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="max-w-2xl mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Clinical Care Disciplines</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Refined, Biological Dental Services</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Harmonizing advanced robotics, biocompatible ceramics, and quiet, soundproof luxury rooms for complete peace of mind.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-desktop">
+<!-- Service 1 -->
+<div class="group bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] hover:shadow-[0_20px_48px_-10px_rgba(11,31,58,0.09)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-space-lg">
+<span class="material-symbols-outlined text-[26px]">upload_file</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Check-ups &amp; Preventive Wellness</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              AI-assisted micro-cavity screening paired with low-radiation 3D CBCT ultra-panoramic diagnostic imaging.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-bold mt-space-lg group-hover:translate-x-1 transition-transform" href="#book">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="group bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] hover:shadow-[0_20px_48px_-10px_rgba(11,31,58,0.09)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-space-lg">
+<span class="material-symbols-outlined text-[26px]">auto_awesome</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Porcelain Veneers &amp; Whitening</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Philips Zoom® in-studio light therapy &amp; bespoke handcrafted Italian porcelain veneers tailored to your facial aesthetics.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-bold mt-space-lg group-hover:translate-x-1 transition-transform" href="#book">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="group bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] hover:shadow-[0_20px_48px_-10px_rgba(11,31,58,0.09)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-space-lg">
+<span class="material-symbols-outlined text-[26px]">view_timeline</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Clear Aligners &amp; Orthodontics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Invisalign® Diamond Provider studio with instant iTero 3D digital outcome simulations on high-definition displays.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-bold mt-space-lg group-hover:translate-x-1 transition-transform" href="#book">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4 -->
+<div class="group bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] hover:shadow-[0_20px_48px_-10px_rgba(11,31,58,0.09)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-space-lg">
+<span class="material-symbols-outlined text-[26px]">dentistry</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Titanium Dental Implants</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Computer-guided gentle 3D surgery with microscopic biocompatible osseointegration and lifetime structural guarantee.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-bold mt-space-lg group-hover:translate-x-1 transition-transform" href="#book">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 5 -->
+<div class="group bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] hover:shadow-[0_20px_48px_-10px_rgba(11,31,58,0.09)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-space-lg">
+<span class="material-symbols-outlined text-[26px]">sanitizer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Gentle Root Canal Therapy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Laser endodontics utilizing photonic hydro-cleaning with zero vibration, zero audible drills, and minimal discomfort.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-bold mt-space-lg group-hover:translate-x-1 transition-transform" href="#book">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 6 -->
+<div class="group bg-surface-container-lowest rounded-lg p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] hover:shadow-[0_20px_48px_-10px_rgba(11,31,58,0.09)] transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors mb-space-lg">
+<span class="material-symbols-outlined text-[26px]">family_restroom</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Pediatric &amp; Family Dental Care</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-sm leading-relaxed">
+              Anxiety-free, gentle experiences in soundproof private suites equipped with ceiling media screens and warm weighted blankets.
+            </p>
+</div>
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary font-bold mt-space-lg group-hover:translate-x-1 transition-transform" href="#book">
+<span>Learn more</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. WHY CHOOSE US (Stat Counters on Tinted Mint Strip) -->
+<section class="w-full py-space-2xl bg-surface-container" id="why-us">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter-desktop text-center">
+<div class="space-y-1">
+<p class="font-display text-display text-primary font-bold">99.4%</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Patient Satisfaction</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Independently audited patient metrics</p>
+</div>
+<div class="space-y-1">
+<p class="font-display text-display text-primary font-bold">15k+</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Restorative Procedures</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Precision crown &amp; veneer fittings</p>
+</div>
+<div class="space-y-1">
+<p class="font-display text-display text-primary font-bold">0%</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Hidden Fees</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100% upfront transparent fee schedule</p>
+</div>
+<div class="space-y-1">
+<p class="font-display text-display text-primary font-bold">45 min</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Average New Patient Checkup</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Thorough, never rushed care</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. MEET THE DOCTOR -->
+<section class="w-full py-space-3xl" id="meet-dr-vance">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Doctor Portrait with Mint Halo -->
+<div class="lg:col-span-5 relative">
+<div class="absolute -inset-4 bg-primary-fixed-dim/20 rounded-[40px] transform -rotate-2 -z-10 blur-sm"></div>
+<div class="relative overflow-hidden rounded-[32px] bg-surface-container-high shadow-[0_16px_40px_rgba(11,31,58,0.08)]">
+<img alt="Dr. Julian Vance, DDS, FAGD" class="w-full h-auto aspect-square object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj46wfZZ9WqI8VGo2tKWrsMnTqWrZTUTbGPSIT97KpY5FDmKQkMds9dPA9uwiBDFkL8BykDQA3MINVFU4lFSjmsFGlSsMWVJfVH0CpAPxtMBuz3KJMfXgmwO__YrUwIlt-RuekMdw7H30wRmAuYYwmzUheaOFAza43r02tg026pXkZ-GX9iW44MuoN9fWhtTwWJWh7FxJfToxhYeh5_osez_BIDJC3vPcqpUXruag"/>
+</div>
+<!-- Floating Credential Badge -->
+<div class="absolute -bottom-5 right-4 z-20 flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-lowest shadow-[0_16px_36px_rgba(11,31,58,0.12)]">
+<span class="material-symbols-outlined text-amber-500 text-[24px]">workspace_premium</span>
+<div>
+<p class="font-label-sm text-label-sm font-bold text-on-surface">Top Dentist San Francisco</p>
+<p class="font-body-sm text-body-sm text-outline">Bay Area Magazine 2023 &amp; 2024</p>
+</div>
+</div>
+</div>
+<!-- Doctor Bio -->
+<div class="lg:col-span-7 lg:pl-space-xl space-y-space-md mt-8 lg:mt-0">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-bold">
+            FOUNDER &amp; CHIEF DENTAL SURGEON
+          </div>
+<h2 class="font-display text-display-mobile md:text-headline-lg text-on-surface font-bold tracking-tight">
+            Dr. Julian Vance, DDS, FAGD
+          </h2>
+<p class="font-label-lg text-label-lg text-primary font-semibold">
+            Fellow of the Academy of General Dentistry • UCSF School of Dentistry Alumnus
+          </p>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>
+              For more than 15 years, Dr. Julian Vance has spearheaded patient-centric, minimally invasive dentistry in San Francisco. Believing oral health should never be accompanied by clinical dread, he founded Aura Dental Studio as a serene architectural haven that marries gentle robotic technologies with warm human empathy.
+            </p>
+<p>
+              Dr. Vance completed rigorous fellowship training at the Academy of General Dentistry and maintains clinical research affiliations with top prosthodontic symposiums globally. He specializes in biomimetic tooth preservation, needle-free laser protocols, and full-arch restorative smile design.
+            </p>
+</div>
+<div class="pt-space-sm flex flex-wrap gap-3">
+<span class="px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Biomimetic Restoration</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Waterlase Certified</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md">Digital Smile Designer</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. TREATMENT PROCESS (Horizontal 4-Step Timeline) -->
+<section class="w-full py-space-3xl bg-surface-container-low" id="process">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">The Aura Journey</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Unhurried, Transparent Care in Four Steps</h2>
+</div>
+<div class="relative">
+<!-- Connecting gradient line (visible on lg screens) -->
+<div class="hidden lg:block absolute top-7 left-12 right-12 h-1 bg-gradient-to-r from-primary-container via-primary to-primary-fixed-dim rounded-full z-0 opacity-40"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop relative z-10">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-md mb-space-md">
+              01
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Private Consultation &amp; 3D Scan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Sip artisanal tea in our private lounge while non-invasive optical cameras scan your teeth in under 60 seconds.
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-md mb-space-md">
+              02
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Digital Treatment Mapping</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Review realistic 3D renderings of your future smile alongside clear timeline milestones and fixed pricing.
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-md mb-space-md">
+              03
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Gentle &amp; Pain-Free Treatment</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Relax in heated massage chairs with noise-canceling headsets while precision water lasers perform your restoration.
+            </p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col items-start">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center shadow-md mb-space-md">
+              04
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Dedicated Follow-Up &amp; Guarantee</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Direct hotline connection with Dr. Vance, preventative checkup schedules, and our full studio lifetime guarantee.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. BEFORE / AFTER & ADVANCED TECHNOLOGY -->
+<section class="w-full py-space-3xl" id="tech-results">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Interactive Tech Breakdown -->
+<div class="lg:col-span-6 space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Cutting-Edge Innovation</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold">Instant Optical Scans vs Traditional Putty Impressions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            We have replaced uncomfortable, gag-inducing silicone impressions with high-frame-rate optical lasers. Millions of accurate data points construct your digital model instantly.
+          </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">check_circle</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">10-Second Digital Intraoral Scans</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero gooey impression trays, with 12-micron accuracy for microscopic veneer fittings.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">check_circle</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Biolase® Hydro-Photonics</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Combines energized water droplets and light energy to gently treat enamel and gums without needles or drills.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-xl bg-surface-container-low">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">check_circle</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Same-Day In-House Ceramic Milling</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No temporary plastic caps or multiple visits. Walk out with your final restoration in one 90-minute visit.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Comparison / Smile Transformation Card -->
+<div class="lg:col-span-6">
+<div class="relative rounded-2xl overflow-hidden shadow-[0_16px_40px_rgba(11,31,58,0.08)] bg-surface-container-lowest p-6">
+<div class="flex items-center justify-between pb-4">
+<span class="font-label-md text-label-md font-bold text-on-surface">Bespoke Veneer Transformation</span>
+<span class="px-3 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed font-label-sm text-label-sm font-semibold">Case #408 • 8 Upper Veneers</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A clean, close-up dental clinical photograph of natural human smile before cosmetic dentistry showing mild enamel wear, slight discoloration, and minor misalignment, clinical lighting in a modern San Francisco dental clinic, professional photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8fbI1hv0EHwEOkDGhz6gG1z5nlTefh39q0XpwQEMXH3FrgosOKo2YqAd1o7KjAo3CQL6xysLHPKpeusSxqXlehr4DzLV--7c5G7aAnM2TV5FTkmZfPAWtqJ8VO6bodTfEkjFO4tbBHfXcgyMVSQohspZJIhFBqiamXKIoB4mpY-mdn1TxM6sRvaf-MmsLvyVXJYfyIDO8ZMZk9KXr-b2EfJRC9OOaAGD6nnZjiJE"/>
+<span class="absolute bottom-2 left-2 px-2.5 py-1 rounded-md bg-inverse-surface/80 text-inverse-on-surface font-label-sm text-label-sm font-bold">Before</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline text-center">Irregular margins &amp; micro-chips</p>
+</div>
+<div class="space-y-2">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A luminous close-up photograph of a radiant, beautiful transformed smile with porcelain veneers, perfectly contoured natural translucency, bright healthy gums, high-end cosmetic dentistry results in San Francisco clinic, warm studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEQ4fzoV4vaxo8MaC-Ne2hy1CIRq8VjE7frq0wPU9aOTvvqvZVh5A_eoQFzOLZaBHvu-Vlg_ugn2H4zJ9XUR6ltm4NfdLjtosPwiy2M0Enr93FRBvI1IVGBW22wNBVDAjveDCVHLiheeZW9_aZtvm3KYt9algLCXuyxlSqIF1ztAFuTUT4CAQvMbnKr6i5DBy-lEWir4r9xLhgqKLwlseiPLDsyQjRWEp7E7nm1GQ"/>
+<span class="absolute bottom-2 left-2 px-2.5 py-1 rounded-md bg-primary text-on-primary font-label-sm text-label-sm font-bold">After (Day 1)</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline text-center">Handcrafted porcelain artistry</p>
+</div>
+</div>
+<div class="mt-6 pt-4 bg-surface-container-low rounded-xl p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]">speed</span>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Total Chairside Time</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Completed in 2 comfortable appointments</p>
+</div>
+</div>
+<a class="font-label-sm text-label-sm font-bold text-primary hover:underline" href="#book">Explore Cases →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. TESTIMONIALS -->
+<section class="w-full py-space-3xl bg-surface-container-low" id="reviews">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Patient Experiences</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">What San Francisco Is Saying</h2>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Previous review" class="w-11 h-11 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center shadow-sm transition-colors" id="prevReviewBtn">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button aria-label="Next review" class="w-11 h-11 rounded-full bg-surface-container-lowest hover:bg-surface-container text-on-surface flex items-center justify-center shadow-sm transition-colors" id="nextReviewBtn">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-desktop" id="testimonialTrack">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              "I had severe dental anxiety from childhood trauma. Dr. Vance and his nursing team completely rewired my perception. The laser procedure felt like nothing more than cool water mist. Truly a miracle studio."
+            </p>
+</div>
+<div class="pt-space-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed font-bold text-label-md">ER</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Elena R.</p>
+<p class="font-body-sm text-body-sm text-outline">Pacific Heights • Veneers &amp; Laser Care</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              "The digital workflow is unlike anything in the Bay Area. In 10 minutes I watched a 3D simulation of my smile evolution with Invisalign. Transparent pricing with zero surprise bills after the fact."
+            </p>
+</div>
+<div class="pt-space-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed font-bold text-label-md">MC</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Marcus C.</p>
+<p class="font-body-sm text-body-sm text-outline">Presidio Heights • Clear Orthodontics</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-xl shadow-[0_8px_24px_rgba(11,31,58,0.04)] flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+<span class="material-symbols-outlined text-[20px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              "Feels more like a five-star spa than a dental practice. Heated ergonomic chairs, ceiling displays showing nature panoramas, and the most gentle cleaning I have ever received in 30 years."
+            </p>
+</div>
+<div class="pt-space-lg flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-fixed font-bold text-label-md">SL</div>
+<div>
+<p class="font-label-md text-label-md font-bold text-on-surface">Sarah L.</p>
+<p class="font-body-sm text-body-sm text-outline">Marina District • Preventive Wellness</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. FAQ ACCORDION -->
+<section class="w-full py-space-3xl" id="faq">
+<div class="max-w-[880px] mx-auto px-margin-desktop">
+<div class="text-center mb-space-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Frequently Addressed</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Clarity On Your Studio Visit</h2>
+</div>
+<div class="space-y-4">
+<!-- Item 1 (Expanded) -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
+<button aria-expanded="true" class="w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface font-semibold faq-toggle">
+<span>Do your treatments hurt or cause dental anxiety?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transform rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md block">
+<p>
+              Absolutely not. Our entire studio was intentionally engineered around fear-free biological care. By utilizing the Biolase® Waterlase system, we perform hard and soft tissue treatments using light photonic pulses and water mist rather than high-vibration friction drills. Additionally, we provide custom acoustic isolation, Bose noise-canceling headphones, ceiling display monitors, weighted blankets, and mild nitrous oxide sedation upon request.
+            </p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
+<button aria-expanded="false" class="w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface font-semibold faq-toggle">
+<span>Do you accept dental insurance or offer financing?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md hidden">
+<p>
+              We operate as an uncompromised fee-for-service studio and are happy to file out-of-network claims on your behalf for direct patient reimbursement. We also offer interest-free, 0% APR in-house payment memberships and flexible third-party medical financing through CareCredit and Proceed Finance.
+            </p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
+<button aria-expanded="false" class="w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface font-semibold faq-toggle">
+<span>How quickly can I get an appointment for an urgent concern?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md hidden">
+<p>
+              We reserve daily emergency concierge slots specifically for chipped crowns, severe tooth pain, or sudden trauma. Existing and new patients can reach our priority triage line 24/7, and same-day treatment is accommodated within normal studio operating hours.
+            </p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
+<button aria-expanded="false" class="w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface font-semibold faq-toggle">
+<span>What makes biological and laser dentistry different?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md hidden">
+<p>
+              Biological dentistry respects oral wellness as fundamentally tied to your entire systemic immune health. We use only 100% biocompatible, metal-free, fluoride-free restorative compounds and test materials for biological compatibility. Laser techniques sterilize target areas instantaneously, accelerating post-treatment tissue recovery by over 300%.
+            </p>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="faq-item bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden transition-all duration-300">
+<button aria-expanded="false" class="w-full p-space-lg flex items-center justify-between text-left font-headline-sm text-headline-sm text-on-surface font-semibold faq-toggle">
+<span>Where in San Francisco is Aura Dental Studio located?</span>
+<span class="material-symbols-outlined text-primary text-[24px] transition-transform">expand_more</span>
+</button>
+<div class="faq-content px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md hidden">
+<p>
+              Our studio is conveniently situated at 2100 Webster Street, Suite 400 in the heart of Pacific Heights. We offer complimentary subterranean valet concierge parking for all our registered patients during their appointments.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. APPOINTMENT BOOKING -->
+<section class="w-full py-space-3xl bg-surface-container-low" id="book">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="bg-surface-container-lowest rounded-3xl p-space-xl lg:p-space-2xl shadow-[0_20px_48px_-10px_rgba(11,31,58,0.08)]">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- Form Side -->
+<div class="lg:col-span-7 space-y-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Effortless Scheduling</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Reserve Your Studio Time</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Our concierge coordinates all pre-visit records and parking arrangements.</p>
+</div>
+<form class="space-y-4 pt-2" id="bookingForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Full Name</label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary text-body-md font-body-md" placeholder="Elena Rostova" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Phone Number</label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary text-body-md font-body-md" placeholder="(415) 555-0192" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Email Address</label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary text-body-md font-body-md" placeholder="elena@example.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Service Needed</label>
+<select class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-md font-body-md">
+<option>Comprehensive Checkup &amp; AI Scan</option>
+<option>Porcelain Veneers Consultation</option>
+<option>Invisalign® Clear Aligners</option>
+<option>Titanium Dental Implants</option>
+<option>Gentle Laser Treatment</option>
+<option>Urgent / Acute Emergency Care</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Preferred Date</label>
+<input class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-md font-body-md" type="date"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Preferred Time</label>
+<select class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-primary text-body-md font-body-md">
+<option>Morning (8:00 AM – 12:00 PM)</option>
+<option>Early Afternoon (12:00 PM – 3:00 PM)</option>
+<option>Late Afternoon (3:00 PM – 6:00 PM)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Special Comfort Requests (Optional)</label>
+<textarea class="w-full px-4 py-3 rounded-2xl bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary text-body-md font-body-md" placeholder="e.g. Mild dental anxiety, sensitivity to cold water, need valet assistance..." rows="2"></textarea>
+</div>
+<button class="w-full py-4 rounded-full font-label-lg text-label-lg font-bold text-on-primary-container bg-primary-container hover:bg-tertiary-container shadow-[0_12px_32px_-8px_rgba(11,31,58,0.12),0_4px_16px_rgba(43,181,176,0.25)] transition-all duration-300" type="submit">
+                Confirm Booking Request
+              </button>
+</form>
+</div>
+<!-- Clinic Hours & Concierge Side -->
+<div class="lg:col-span-5 bg-surface-container-low rounded-2xl p-space-lg lg:p-space-xl flex flex-col justify-between space-y-space-lg">
+<div class="space-y-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Studio Concierge Info</h3>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">schedule</span>
+<div>
+<p class="font-semibold text-on-surface">Studio Clinic Hours</p>
+<p>Mon – Sat: 8:00 AM – 6:00 PM</p>
+<p>Sunday: Concierge Emergency On-Call</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">local_parking</span>
+<div>
+<p class="font-semibold text-on-surface">Valet Concierge Parking</p>
+<p>Reserved garage access located directly beneath 2100 Webster St. Validated by our front reception desk.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">ring_volume</span>
+<div>
+<p class="font-semibold text-on-surface">Direct Telephone Line</p>
+<a class="text-primary font-bold hover:underline" href="tel:4158902872">(415) 890-AURA (2872)</a>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Quiet Sanctuary Guarantee</p>
+<p class="font-body-sm text-body-sm text-outline mt-1">We schedule single-patient dedicated studio time slots. No waiting rooms, no overcrowding.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. CONTACT & MAP -->
+<section class="w-full py-space-3xl" id="contact">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Contact Details -->
+<div class="lg:col-span-5 space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Studio Visit</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Pacific Heights Sanctuary</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Perched above the quiet avenues of Pacific Heights with panoramic vistas of the Bay and city hills.
+          </p>
+<div class="space-y-4 pt-2 font-body-md text-body-md text-on-surface-variant">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">location_on</span>
+<div>
+<p class="font-semibold text-on-surface">Aura Dental Studio</p>
+<p>2100 Webster St, Suite 400<br/>San Francisco, CA 94115</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">call</span>
+<a class="hover:text-primary transition-colors" href="tel:4158902872">(415) 890-AURA / (415) 555-0192</a>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">mail</span>
+<a class="hover:text-primary transition-colors" href="mailto:concierge@auradentalstudio.com">concierge@auradentalstudio.com</a>
+</div>
+</div>
+</div>
+<!-- Google Map Canvas -->
+<div class="lg:col-span-7">
+<div class="w-full h-[380px] bg-cover bg-center rounded-2xl shadow-[0_12px_32px_rgba(11,31,58,0.06)] relative overflow-hidden" data-location="2100 Webster St, San Francisco, CA 94115" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBgji_2qUIL43dA-CEi7KGxvXCAXdVIZkmqIZOlYgqK7R3dk21BRaCEiZm_P2ZXBKFWG5AremruVCxcAWZ37dm6jpOvCsTwuSUjGHhj8aEwpQUDv7TL_ecIlJGYqiTS8eecaGQYKdNB98g15BGOZt-ksKmKFij4bL2kUaKvUBjn5tklQqoRtLHOHHVqJyfQ4CR742mFb05fjAJEeSlQX4pVMOBK2XLUeKRTDJa7Pm4')">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">near_me</span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Pacific Heights • Webster &amp; Clay</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. FOOTER CONTENT EXTENSION -->
+<section class="w-full py-space-xl bg-surface-container-high text-on-surface-variant">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop mb-space-lg">
+<div class="space-y-space-sm">
+<img alt="Aura Dental Studio Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBBHpTZCj5KZJ1x3F-HFeHNis1ORiVt8LRk2LgcqNkyPaEcB8y2vDdpOuwyJfKxymMC1vCJLbKZAiiaSxZa0VW513tTaSlH1zSINq79fyW9WZgMMMJqdbBvpTqm69PSFswGwDl8Hu34efqq94Ejfyq5iAQF8hUdxHByMs9bkXpP30O7i-48mdNyzNYtAe8DrsB9hbO59qASeXp02g_h0VVqNYP2PTjNTav1mNLVUsRE"/>
+<p class="font-body-sm text-body-sm text-outline">
+            Pioneering biological and laser surgical dentistry in Pacific Heights, SF.
+          </p>
+</div>
+<div class="space-y-2">
+<p class="font-label-md text-label-md font-bold text-on-surface">Full Services Directory</p>
+<ul class="space-y-1 font-body-sm text-body-sm text-outline">
+<li><a class="hover:text-primary" href="#services">Diagnostic 3D CBCT Screening</a></li>
+<li><a class="hover:text-primary" href="#services">Bespoke Italian Veneers</a></li>
+<li><a class="hover:text-primary" href="#services">Invisalign® Diamond Aligner</a></li>
+<li><a class="hover:text-primary" href="#services">Biocompatible Titanium Implants</a></li>
+<li><a class="hover:text-primary" href="#services">Laser Endodontic Therapy</a></li>
+</ul>
+</div>
+<div class="space-y-2">
+<p class="font-label-md text-label-md font-bold text-on-surface">Dental Emergency Helpline</p>
+<p class="font-body-sm text-body-sm text-outline">Immediate provider dispatch for acute cosmetic dental emergencies, tooth fractures, or pain.</p>
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-primary font-bold mt-1" href="tel:4158902872">
+<span class="material-symbols-outlined text-[18px]">emergency</span>
+<span>(415) 890-AURA (Direct)</span>
+</a>
+</div>
+<div class="space-y-2">
+<p class="font-label-md text-label-md font-bold text-on-surface">Clinical Disclaimer</p>
+<p class="font-label-sm text-label-sm text-outline leading-relaxed">
+            The information provided on this site is intended for educational purposes and should not replace clinical diagnosis by a licensed oral surgeon. Dr. Julian Vance, DDS, Lic. CA #629401.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive accordion logic
+  document.querySelectorAll('.faq-toggle').forEach(button => {
+    button.addEventListener('click', () => {
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('.material-symbols-outlined');
+      
+      // Close all items
+      document.querySelectorAll('.faq-toggle').forEach(otherBtn => {
+        otherBtn.setAttribute('aria-expanded', 'false');
+        otherBtn.nextElementSibling.classList.add('hidden');
+        otherBtn.nextElementSibling.classList.remove('block');
+        otherBtn.querySelector('.material-symbols-outlined').classList.remove('rotate-180');
+      });
+
+      // Toggle clicked item
+      if (!isExpanded) {
+        button.setAttribute('aria-expanded', 'true');
+        content.classList.remove('hidden');
+        content.classList.add('block');
+        icon.classList.add('rotate-180');
+      }
+    });
+  });
+
+  // Client booking request toast simulation
+  const bookingForm = document.getElementById('bookingForm');
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = bookingForm.querySelector('button[type="submit"]');
+      const originalText = btn.innerText;
+      btn.innerText = 'Reservation Confirmed! Concierge Calling...';
+      btn.classList.add('opacity-90');
+      setTimeout(() => {
+        bookingForm.reset();
+        btn.innerText = originalText;
+        btn.classList.remove('opacity-90');
+      }, 4000);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-3xl pb-space-2xl"><div class="max-w-[1280px] mx-auto px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop mb-space-2xl"><div class="space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Aura Dental Studio" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrBBHpTZCj5KZJ1x3F-HFeHNis1ORiVt8LRk2LgcqNkyPaEcB8y2vDdpOuwyJfKxymMC1vCJLbKZAiiaSxZa0VW513tTaSlH1zSINq79fyW9WZgMMMJqdbBvpTqm69PSFswGwDl8Hu34efqq94Ejfyq5iAQF8hUdxHByMs9bkXpP30O7i-48mdNyzNYtAe8DrsB9hbO59qASeXp02g_h0VVqNYP2PTjNTav1mNLVUsRE"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">Aura Dental</span></div><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Architectural precision meets holistic sanctuary care in San Francisco's Pacific Heights. Elevating diagnostic dentistry into an unhurried, restorative experience.</p><div class="flex items-center gap-2 pt-space-xs"><span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">ADA Accredited</span><span class="inline-flex items-center px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold">AACD Fellow</span></div></div><div class="space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Clinic Directory</h3><ul class="space-y-2 font-body-sm text-body-sm"><li class="flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">location_on</span><span>2100 Webster Street, Suite 402<br/>Pacific Heights, San Francisco, CA 94115</span></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">call</span><a class="hover:text-primary transition-colors" href="tel:4155550192">(415) 555-0192</a></li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary shrink-0">mail</span><a class="hover:text-primary transition-colors" href="mailto:concierge@auradentalstudio.com">concierge@auradentalstudio.com</a></li></ul></div><div class="space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Hours &amp; Care</h3><ul class="space-y-2 font-body-sm text-body-sm"><li class="flex justify-between py-1 border-b border-surface-container-high"><span>Monday – Thursday</span><span class="font-semibold text-on-surface">7:30 AM – 6:00 PM</span></li><li class="flex justify-between py-1 border-b border-surface-container-high"><span>Friday</span><span class="font-semibold text-on-surface">8:00 AM – 3:00 PM</span></li><li class="flex justify-between py-1 border-b border-surface-container-high"><span>Saturday</span><span class="font-semibold text-on-surface">By Concierge Appt</span></li><li class="flex justify-between py-1"><span>Sunday</span><span class="text-outline">Closed (On-Call)</span></li></ul></div><div class="space-y-space-sm"><h3 class="font-headline-sm text-headline-sm text-on-surface">Accreditations</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Board-certified in advanced prosthodontics and laser cosmetic restorations. Dedicated to biological, biocompatible oral therapeutics.</p><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_12px_32px_-8px_rgba(11,31,58,0.06)]"><p class="font-label-md text-label-md font-semibold text-on-surface">Emergency On-Call Concierge</p><p class="font-body-sm text-body-sm text-outline mt-1">24/7 direct provider hotline for registered patients with urgent acute needs.</p></div></div></div><div class="pt-space-lg border-t border-surface-container-high flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left"><p class="font-body-sm text-body-sm text-outline">© 2024 Aura Dental Studio San Francisco. All rights reserved. CA Lic. #629401.</p><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="text-outline hover:text-primary transition-colors" href="#">HIPAA Privacy Policy</a><a class="text-outline hover:text-primary transition-colors" href="#">Notice of Nondiscrimination</a><a class="text-outline hover:text-primary transition-colors" href="#">Accessibility</a></div></div></div></footer><div class="fixed bottom-6 right-6 z-50"><a aria-label="Chat with Aura Dental Studio Concierge on WhatsApp" class="group flex items-center gap-3 bg-surface-container-lowest text-on-surface shadow-[0_20px_48px_-10px_rgba(11,31,58,0.12),0_8px_24px_-4px_rgba(43,181,176,0.16)] px-4 py-3 rounded-full hover:bg-surface-container-high transition-all duration-300 backdrop-blur-xl" href="https://wa.me/14155550192" rel="noopener noreferrer" target="_blank"><span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-primary-container"></span></span><span class="font-label-md text-label-md font-semibold text-on-surface group-hover:text-primary transition-colors">Concierge Chat</span><span class="material-symbols-outlined text-[20px] text-primary">chat</span></a></div></body></html>
